@@ -149,6 +149,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <label class="label">Photo of New Address</label>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile01">
+                              </div>
                         </div>
                         <br><hr class="border border-primary border-opacity-25 opacity-75"><br>
                         <h4>Guardian Details</h4>
@@ -211,39 +215,12 @@
                             </div>
                             <div class="col-2">
                                 <div class="input-group-flex">
-                                    <label class="label">Email Number</label>
+                                    <label class="label">Email Address</label>
                                     <input class="form-control" type="text" name="phone" placeholder="john@gmail.com">
                                 </div>
                             </div>
                         </div>
                         <br>
-                        <form class="row g-1">
-                            <div class="col-12">
-                            <label class="label">Home Address</label><br>
-                              <label for="inputAddress" class="form-label">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="col-12"><br>
-                              <label for="inputAddress2" class="form-label">Address 2</label>
-                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="col-md-12"><br>
-                                <label for="inputState" class="form-label">Province</label>
-                                <select id="province" class="form-select slist">
-                                  <option selected>Choose...</option>
-                                </select>
-                                <div class="col-md-12"><br>
-                                    <label for="inputState" class="form-label">City</label>
-                                    <select id="city" class="form-select slist">
-                                      <option selected>Choose...</option>
-                                    </select>
-                            <div class="col-md-5"><br>
-                              <label for="inputZip" class="form-label">Zip</label>
-                              <input type="text" class="form-control" id="inputZip">
-                            </div>
-                            <br>
-                        </form>
-
                         <br><hr class="border border-primary border-opacity-25 opacity-75"><br>
                         <h4 class="label">Further Information</h4><br>
                         <h5>If you have any other children attending the school kindly provide the details below:</h5>
@@ -287,19 +264,19 @@
                         <h4 class="headers">nursery provision is 5:00 Am in the morning or 5:00 pm in the afternoon sessions, as shown below.</h4>
                         <h5 class="below">**Please tick which sessions you prefer**</h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
                               8:00 AM - 11:00 AM
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
                               1:00 PM - 4:00 PM
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
                               Others
                             </label>
@@ -326,6 +303,26 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
     <script src="js/city.js"></script>
+    <!-- Checkbox Function -->
+    <script>
+        // the selector will match all input controls of type :checkbox
+        // and attach a click event handler 
+        $("input:checkbox").on('click', function() {
+          // in the handler, 'this' refers to the box clicked on
+          var $box = $(this);
+          if ($box.is(":checked")) {
+            // the name of the box is retrieved using the .attr() method
+            // as it is assumed and expected to be immutable
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            // the checked state of the group/box on the other hand will change
+            // and the current value is retrieved using .prop() method
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+          } else {
+            $box.prop("checked", false);
+          }
+        });
+    </script>
 </body>
 </html>
 <!-- end document-->
