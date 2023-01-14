@@ -65,18 +65,30 @@
                 <div class="card-body">
                     <h2 class="title">Student Registration Form</h2>
                     <h4>Child's Details</h4><br>
-                    <form method="POST">
+                    <form method="POST" class="needs-validation" novalidate>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group-flex">
-                                    <label class="label">first name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example" required>
+                                    <label class="form-label" for="validationCustom01" >first name</label>
+                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example" id="validationCustom01" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter your first name.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">last name</label>
                                     <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter your last name.
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -88,6 +100,12 @@
                                     <div class="input-group-icon">
                                         <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here" required>
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                          </div>
+                                          <div class="invalid-feedback">
+                                            Please choose a Date.
+                                          </div>
                                     </div>
                                 </div>
                             </div>
@@ -113,10 +131,22 @@
                                 <label class="label">Home Address</label><br>
                                   <label for="inputAddress" class="form-label">Address</label>
                                   <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                    Please enter a valid address.
+                                  </div>
                                 </div>
                                 <div class="col-12"><br>
                                   <label for="inputAddress2" class="form-label">Address 2</label>
                                   <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                  <div class="valid-feedback">
+                                    Looks good and this is optional!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                    Please choose a name.
+                                  </div>
                                 </div>
                                 <div class="col-md-12"><br>
                                     <label for="inputState" class="form-label">Province</label>
@@ -131,6 +161,12 @@
                                 <div class="col-md-5"><br>
                                     <label for="inputZip" class="form-label">Zip</label>
                                     <input type="text" class="form-control" id="inputZip" placeholder="2009">
+                                    <div class="valid-feedback">
+                                        Looks good and this is optional!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please choose a name.
+                                      </div>
                                 </div>
                                 <br>
                             </form>
@@ -138,6 +174,12 @@
                                 <div class="input-group-flex">
                                     <label class="label">Phone Number</label>
                                     <input class="form-control" type="text" name="phone" placeholder="(859) 457-3345" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter a phone number.
+                                      </div>
                             </div>
                         </div>
                         <br>
@@ -148,12 +190,24 @@
                                     <div class="input-group-icon">
                                         <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here" required>
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                          </div>
+                                          <div class="invalid-feedback">
+                                            Please enter a valid date.
+                                          </div>
                                     </div>
                                 </div>
                             </div>
                             <label class="label">Photo of New Address</label>
                             <div class="input-group mb-3">
                                 <input type="file" class="form-control" id="inputGroupFile01" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                    Please choose a file (.png, .jpg etc.)
+                                  </div>
                               </div>
                         </div>
                         <br><hr class="border border-primary border-opacity-25 opacity-75"><br>
@@ -164,12 +218,24 @@
                                 <div class="input-group-flex">
                                     <label class="label">first name</label>
                                     <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter your first name.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">last name</label>
                                     <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter your last name.
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -213,12 +279,24 @@
                                 <div class="input-group-flex">
                                     <label class="label">Mobile Number</label>
                                     <input class="form-control" type="text" name="phone" placeholder="(0919) 457-3345" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter your mobile number.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">Email Address</label>
                                     <input class="form-control" type="text" name="phone" placeholder="john@gmail.com" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter your email address.
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -232,6 +310,12 @@
                                 <div class="input-group-flex">
                                     <label class="label">sibling's full name</label>
                                     <input class="form-control" type="text" placeholder="Enter your full name" aria-label="default input example">
+                                    <div class="valid-feedback">
+                                        Looks good and this is optional!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please choose a name.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-2">
@@ -240,6 +324,12 @@
                                     <div class="input-group-icon">
                                         <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here" >
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        <div class="valid-feedback">
+                                            Looks good and this is optional!
+                                          </div>
+                                          <div class="invalid-feedback">
+                                            Please choose a name.
+                                          </div>
                                     </div>
                                 </div>
                             </div>
@@ -250,6 +340,12 @@
                                 <div class="input-group-flex">
                                     <label class="label">sibling's full name</label>
                                     <input class="form-control" type="text" placeholder="Enter your full name" aria-label="default input example">
+                                    <div class="valid-feedback">
+                                        Looks good and this is optional!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please choose a name.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-2">
@@ -258,6 +354,12 @@
                                     <div class="input-group-icon">
                                         <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        <div class="valid-feedback">
+                                            Looks good and this is optional!
+                                          </div>
+                                          <div class="invalid-feedback">
+                                            Please choose a name.
+                                          </div>
                                     </div>
                                 </div>
                             </div>
@@ -346,6 +448,25 @@
           }
         });
 
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
     </script>
 </body>
 </html>
