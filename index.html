@@ -74,7 +74,7 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">last name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example">
                                 </div>
                             </div>
                         </div>
@@ -106,17 +106,36 @@
                             </div>
                         </div>
                         <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group-flex">
-                                    <label class="label">Home Address</label>
-                                    <input class="form-control" type="text" placeholder="B1 L87 New York USA" aria-label="default input example">
+                            <form class="row g-1">
+                                <div class="col-12">
+                                <label class="label">Home Address</label><br>
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                                 </div>
-                            </div>
+                                <div class="col-12"><br>
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-12"><br>
+                                    <label for="inputState" class="form-label">Province</label>
+                                    <select id="province" class="form-select slist">
+                                      <option selected>Choose...</option>
+                                    </select>
+                                    <div class="col-md-12"><br>
+                                        <label for="inputState" class="form-label">City</label>
+                                        <select id="city" class="form-select slist">
+                                          <option selected>Choose...</option>
+                                        </select>
+                                <div class="col-md-5"><br>
+                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <br>
+                            </form>
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">Phone Number</label>
                                     <input class="form-control" type="text" name="phone" placeholder="(859) 457-3345">
-                                </div>
                             </div>
                         </div>
                         <br>
@@ -144,7 +163,7 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">last name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example">
                                 </div>
                             </div>
                         </div>
@@ -223,7 +242,7 @@
                               <input type="text" class="form-control" id="inputZip">
                             </div>
                             <br>
-                          </form>
+                        </form>
 
                         <br><hr class="border border-primary border-opacity-25 opacity-75"><br>
                         <h4 class="label">Further Information</h4><br>
@@ -233,7 +252,7 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">sibling's full name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your full name" aria-label="default input example">
                                 </div>
                             </div>
                             <div class="col-2">
@@ -251,7 +270,7 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">sibling's full name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your full name" aria-label="default input example">
                                 </div>
                             </div>
                             <div class="col-2">
@@ -284,7 +303,11 @@
                             <label class="form-check-label" for="flexRadioDefault2">
                               Others
                             </label>
-                          </div>
+                          </div><br>
+                          <p><strong>Note:</strong><br><br><em>Possible parental preference will be taken into account but no guarantee can be given as the 
+                            allocation of places depends on whether a vacancy exists in the morning of the afternoon. 
+                            It would be helpful, therefore, if you could also tick the "Either session" 
+                            if you do not have a strong preference.</em></p><br>
                         <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
                     </div>
                     </form>
