@@ -41,6 +41,7 @@
 @media (max-width: 767px) {
   .col-2 {
     width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -223,7 +224,7 @@ h6 {
 }
 
 .p-t-10 {
-  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .p-t-30 {
@@ -661,3 +662,10 @@ input:placeholder-shown {
     padding: 50px 40px;
   }
 }
+
+@media screen {
+  .input-group-flex {
+      margin-top: 10px;
+  }
+}
+
