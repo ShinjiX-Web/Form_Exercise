@@ -24,6 +24,8 @@
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
 
+    <!-- Vendor JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://www.joyofreact.com/favicon.png?v=1" type="image/x-icon">
     
@@ -68,13 +70,13 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">first name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">last name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example" required>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +86,7 @@
                                 <div class="input-group">
                                     <label class="label">date of birth</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here" required>
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -94,11 +96,11 @@
                                     <label class="label">Gender</label>
                                     <div class="p-t-10">
                                         <label class="radio-container m-r-45">Male
-                                            <input type="radio" checked="checked" name="gender">
+                                            <input type="radio" checked="checked" name="gender" required>
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container">Female
-                                            <input type="radio" name="gender">
+                                            <input type="radio" name="gender" required>
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -110,7 +112,7 @@
                                 <div class="col-12">
                                 <label class="label">Home Address</label><br>
                                   <label for="inputAddress" class="form-label">Address</label>
-                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
                                 </div>
                                 <div class="col-12"><br>
                                   <label for="inputAddress2" class="form-label">Address 2</label>
@@ -118,12 +120,12 @@
                                 </div>
                                 <div class="col-md-12"><br>
                                     <label for="inputState" class="form-label">Province</label>
-                                    <select id="province" class="form-select slist">
+                                    <select id="province" class="form-select slist" required>
                                       <option selected>Choose...</option>
                                     </select>
                                     <div class="col-md-12"><br>
                                         <label for="inputState" class="form-label">City</label>
-                                        <select id="city" class="form-select slist">
+                                        <select id="city" class="form-select slist" required>
                                           <option selected>Choose...</option>
                                         </select>
                                 <div class="col-md-5"><br>
@@ -135,7 +137,7 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">Phone Number</label>
-                                    <input class="form-control" type="text" name="phone" placeholder="(859) 457-3345">
+                                    <input class="form-control" type="text" name="phone" placeholder="(859) 457-3345" required>
                             </div>
                         </div>
                         <br>
@@ -144,14 +146,14 @@
                                 <div class="input-group">
                                     <label class="label">Date of moved to this address</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here" required>
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
                             </div>
                             <label class="label">Photo of New Address</label>
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control" id="inputGroupFile01">
+                                <input type="file" class="form-control" id="inputGroupFile01" required>
                               </div>
                         </div>
                         <br><hr class="border border-primary border-opacity-25 opacity-75"><br>
@@ -161,13 +163,13 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">first name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your first name" aria-label="default input example" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">last name</label>
-                                    <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example">
+                                    <input class="form-control" type="text" placeholder="Enter your last name" aria-label="default input example" required>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +178,7 @@
                             <div class="col-2">
                                 <div>
                                     <label class="label">Relationship to the Child</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select" aria-label="Default select example" required>
                                             <option selected >Select</option>
                                             <option value="1">Mother</option>
                                             <option value="2">Father</option>
@@ -191,15 +193,15 @@
                                     <label class="label">Salutation</label>
                                     <div class="p-t-10">
                                         <label class="radio-container m-r-45">Mr.
-                                            <input type="checkbox" checked="checked" name="gender">
+                                            <input type="checkbox" checked="checked" name="gender" required>
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container m-r-45">Mrs.
-                                            <input type="checkbox" name="gender">
+                                            <input type="checkbox" name="gender" required>
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container my-1">Miss
-                                            <input type="checkbox" name="gender">
+                                            <input type="checkbox" name="gender" required>
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -210,13 +212,13 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">Mobile Number</label>
-                                    <input class="form-control" type="text" name="phone" placeholder="(0919) 457-3345">
+                                    <input class="form-control" type="text" name="phone" placeholder="(0919) 457-3345" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">Email Address</label>
-                                    <input class="form-control" type="text" name="phone" placeholder="john@gmail.com">
+                                    <input class="form-control" type="text" name="phone" placeholder="john@gmail.com" required>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +238,7 @@
                                 <div class="input-group-flex">
                                     <label class="label">date of birth</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" placeholder="Click Here" >
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -285,8 +287,29 @@
                             allocation of places depends on whether a vacancy exists in the morning of the afternoon. 
                             It would be helpful, therefore, if you could also tick the "Either session" 
                             if you do not have a strong preference.</em></p><br>
-                        <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
-                    </div>
+                        <!-- Trigger the modal with a button -->
+                        <button class="btn btn--radius-2 btn--blue" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top"><i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                          </svg></i></button>
+                        <!-- Vertically centered modal -->
+                        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Student Registration Acknowledgement</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Thank you for submitting this information. We will contact you as soon as we received and processed your enrollment.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
                     </form>
                 </div>
             </div>
@@ -322,6 +345,7 @@
             $box.prop("checked", false);
           }
         });
+
     </script>
 </body>
 </html>
