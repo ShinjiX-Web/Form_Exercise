@@ -160,7 +160,7 @@
                                         </select>
                                 <div class="col-md-5"><br>
                                     <label for="inputZip" class="form-label">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip" placeholder="2009">
+                                    <input type="text" class="form-control" id="inputZip" placeholder="2009" onkeypress="return onlyNumberKey(event)" required>
                                     <div class="valid-feedback">
                                         Looks good and this is optional!
                                       </div>
@@ -173,7 +173,7 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label">Phone Number</label>
-                                    <input class="form-control" type="text" name="phone" placeholder="(859) 457-3345" required>
+                                    <input class="form-control" type="text" name="phone" placeholder="(859) 457-3345" onkeypress="return onlyNumberKey(event)" required>
                                     <div class="valid-feedback">
                                         Looks good!
                                       </div>
@@ -278,7 +278,7 @@
                             <div class="col-2">
                                 <div class="input-group-flex">
                                     <label class="label" for="tel">Mobile Number</label>
-                                    <input class="form-control" type="tel" name="phone" placeholder="(0919) 457-3345" required>
+                                    <input class="form-control" type="text" name="phone" placeholder="(0919) 457-3345" onkeypress="return onlyNumberKey(event)" required>
                                     <div class="valid-feedback">
                                         Looks good!
                                       </div>
@@ -467,6 +467,19 @@
     }, false)
   })
 })()
+
+function onlyNumberKey(evt) {
+              
+              // Only ASCII character in that range allowed
+              var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+              if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                  return false;
+              return true;
+          }
+
+          function detailssubmit() {
+            alert("Your details were Submitted");
+        }
     </script>
 </body>
 </html>
