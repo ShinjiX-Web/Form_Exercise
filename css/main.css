@@ -129,6 +129,7 @@ body {
   background-image: url('https://www.hau.edu.ph/images/this-is-holy.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 14px;
