@@ -680,3 +680,8 @@ input:placeholder-shown {
   padding: 0;
   border: none;
 }
+
+.myImage {
+  text-align: center;
+  margin-bottom: 40px;
+}
